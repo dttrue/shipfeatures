@@ -1,3 +1,4 @@
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-2xl px-6 py-24 text-neutral-900">
@@ -7,6 +8,18 @@ export default function Home() {
         Do not expand.
         Ship features, not ideas.
       */}
+
+      <header className="mb-12">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/svg/shipfeatures-wordmark.svg
+"
+          alt="ShipFeatures"
+          className="h-6 w-auto"
+          loading="eager"
+          decoding="async"
+        />
+      </header>
 
       <h1 className="text-3xl font-semibold leading-tight">
         I build small, paid web tools for founders and service businesses.
@@ -19,7 +32,7 @@ export default function Home() {
       </p>
 
       <a
-        href="mailto:daniel@shipfeatures.dev?subject=Project%20Inquiry"
+        href="mailto:info@shipfeatures.dev?subject=Project%20Inquiry"
         className="inline-block mt-8 rounded bg-black px-6 py-3 text-white"
       >
         Email me about a project
