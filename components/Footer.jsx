@@ -11,19 +11,28 @@ export default function Footer() {
       <div className="flex flex-col items-center gap-1 sm:flex-row sm:justify-between">
         <span>© {new Date().getFullYear()} ShipFeatures</span>
 
-        <a
-          href="https://www.linkedin.com/in/daniel-torres-9889501aa/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "var(--foreground-muted)" }}
-          className="hover:opacity-80"
-        >
-          Connect with me on LinkedIn
-        </a>
+        <div className="flex gap-4">
+          <a
+            href="https://www.linkedin.com/in/daniel-torres-9889501aa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--foreground-muted)" }}
+            className="hover:opacity-80"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/dttrue"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--foreground-muted)" }}
+            className="hover:opacity-80"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </footer>
   );
 }
-
-
-
