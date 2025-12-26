@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 import Footer from "@/components/Footer";
@@ -19,10 +20,23 @@ export const metadata = {
     "ShipFeatures builds small, paid web tools and dashboards for founders and service businesses. Fixed scope, fast delivery, revenue-ready software.",
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* GA4 */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-YH4MQJVP00"
+        strategy="afterInteractive"
+      />
+      <Script id="ga4-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YH4MQJVP00', { anonymize_ip: true });
+        `}
+      </Script>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -30,11 +44,9 @@ export default function RootLayout({ children }) {
           <ThemeToggle />
         </div>
 
-        
         {children}
         <Footer />
       </body>
-     
     </html>
   );
 }
