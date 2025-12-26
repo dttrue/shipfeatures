@@ -6,6 +6,11 @@
   --foreground-muted: #525252;
   --foreground-strong: #0a0a0a;
 
+  --surface: #f5f5f5;
+  /* ✅ visible on white */
+  --border: #e5e5e5;
+  /* ✅ subtle but visible */
+
   --button-bg: #0a0a0a;
   --button-fg: #ffffff;
 }
@@ -15,6 +20,10 @@
   --foreground: #e6e6e6;
   --foreground-muted: #bdbdbd;
   --foreground-strong: #ffffff;
+
+  --surface: #1a1a1a;
+  /* ✅ visible on dark */
+  --border: #2a2a2a;
 
   --button-bg: #ffffff;
   --button-fg: #0a0a0a;

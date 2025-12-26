@@ -91,6 +91,22 @@ export default function Home() {
             on.
           </p>
         </div>
+
+        <div
+          className="mt-8 rounded-lg border px-4 py-3 text-sm"
+          style={{
+            borderColor: "var(--foreground-muted)",
+            background: "rgba(255,255,255,0.02)",
+          }}
+        >
+          <span className="block font-medium text-[color:var(--foreground-strong)]">
+            Launch Assist
+          </span>
+          <p className="mt-1 text-[color:var(--foreground-muted)]">
+            Need an existing project deployed? Deployment and go-live support is
+            scoped and billed separately.
+          </p>
+        </div>
       </section>
     </main>
   );

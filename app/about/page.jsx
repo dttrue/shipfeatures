@@ -49,6 +49,8 @@ export default function AboutPage() {
           If you have a clearly defined problem and want it built cleanly, you
           can reach me via email.
         </p>
+
+        
       </section>
 
       <div
